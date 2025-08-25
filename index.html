@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Argonexus - A Technologist's Journey</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            'brand-primary': '#4F46E5',
+            'brand-secondary': '#7C3AED',
+            'brand-dark': '#111827',
+            'brand-light': '#F9FAFB',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-dark text-brand-light font-sans antialiased">
+
+  <!-- Header -->
+  <header class="bg-brand-dark/80 backdrop-blur-sm sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-white">Argo<span class="text-brand-primary">nexus</span></a>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#themes">Themes</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="hidden md:block bg-brand-primary hover:bg-brand-secondary text-white font-semibold py-2 px-4 rounded-lg transition-transform hover:scale-105">Connect</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center overflow-hidden">
+    <div class="absolute inset-0 bg-brand-dark opacity-50 z-10"></div>
+    <div class="absolute inset-0 z-0">
+      <div class="absolute bottom-0 left-[-20%] right-[-20%] top-[-20%] h-[140%] w-[140%] bg-transparent bg-[radial-gradient(circle_farthest-side,rgba(79,70,229,0.2),rgba(255,255,255,0))]"></div>
+    </div>
+    <div class="container mx-auto px-6 z-20">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+        Exploring the Nexus of <span class="text-brand-primary">Technology</span> & <span class="text-brand-secondary">Curiosity</span>
+      </h1>
+      <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+        A personal site dedicated to exploring code, creativity, and the connected ideas that shape our digital world.
+      </p>
+      <a href="#themes" class="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-3 px-8 rounded-full text-lg transition-transform hover:scale-105 inline-block">Start Exploring</a>
+    </div>
+  </section>
+
+  <!-- Core Themes Section -->
+  <section id="themes" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-2">Core Themes</h2>
+      <p class="text-gray-400 mb-12">I write about the intersection of technology, craftsmanship, and big ideas.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-brand-dark p-8 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold mb-3">Future Tech</h3>
+          <p class="text-gray-400">Exploring emerging technologies like AI and VR, and contemplating their impact on our future.</p>
+        </div>
+        <div class="bg-brand-dark p-8 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold mb-3">Digital Craftsmanship</h3>
+          <p class="text-gray-400">Diving deep into the art of building beautiful, functional, and meaningful things with code and design.</p>
+        </div>
+        <div class="bg-brand-dark p-8 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold mb-3">Connected Ideas</h3>
+          <p class="text-gray-400">Connecting dots between technology, productivity, philosophy, and books I've read.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">Latest From the Blog</h2>
+        <p class="text-gray-400">My most recent thoughts, tutorials, and discoveries.</p>
+      </div>
+      <div id="latest-posts" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+      <div class="text-center mt-12">
+        <a href="blog.html" class="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-3 px-8 rounded-full text-lg transition-transform hover:scale-105 inline-block">View All Posts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6 max-w-2xl text-center">
+      <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" class="w-full mb-4 p-3 rounded-lg bg-brand-dark border border-gray-700" required>
+        <input type="email" placeholder="Your Email" class="w-full mb-4 p-3 rounded-lg bg-brand-dark border border-gray-700" required>
+        <textarea placeholder="Your Message" rows="5" class="w-full mb-4 p-3 rounded-lg bg-brand-dark border border-gray-700" required></textarea>
+        <button type="submit" class="w-full bg-brand-primary hover:bg-brand-secondary text-white font-bold py-3 px-8 rounded-full">Send Message</button>
+      </form>
+      <div id="form-message" class="mt-4 text-green-400"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-dark border-t border-gray-800">
+    <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+      <p>&copy; 2024 Argonexus. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Contact form
+    const form = document.getElementById('contact-form');
+    const message = document.getElementById('form-message');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      message.textContent = "Thanks for reaching out!";
+      form.reset();
+      setTimeout(() => message.textContent = "", 5000);
+    });
+
+    // Load latest 3 posts
+    fetch("posts.json")
+      .then(res => res.json())
+      .then(posts => {
+        const latest = posts.slice(0, 3);
+        const container = document.getElementById("latest-posts");
+        container.innerHTML = latest.map(post => `
+          <div class="bg-brand-dark rounded-xl overflow-hidden shadow-lg group">
+            <a href="post.html?id=${post.id}">
+              <img src="${post.image}" alt="${post.title}" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <div class="p-6">
+              <span class="text-sm text-brand-secondary font-semibold">${post.category}</span>
+              <h3 class="text-xl font-bold my-2 hover:text-brand-primary"><a href="post.html?id=${post.id}">${post.title}</a></h3>
+              <p class="text-gray-400 text-sm mb-4">${post.content.substring(0, 100)}...</p>
+            </div>
+          </div>
+        `).join("");
+      });
+  </script>
+
+</body>
+</html>

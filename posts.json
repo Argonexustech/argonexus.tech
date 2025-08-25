@@ -1,0 +1,32 @@
+[
+  {
+    "id": "future-web-2025",
+    "title": "The Future of Web Development in 2025",
+    "category": "Future Tech",
+    "author": "Your Name",
+    "date": "July 15, 2024",
+    "readTime": "6 min read",
+    "image": "https://placehold.co/600x400/1F2937/7C3AED?text=Tech",
+    "content": "<p>Web development in 2025 is evolving faster than ever. With AI-powered coding assistants, component-driven design systems, and next-gen frameworks, developers are shifting from writing boilerplate code to focusing on problem-solving and creativity.</p><h2>AI in Everyday Development</h2><p>Artificial intelligence will play a much larger role in helping developers write, debug, and optimize code...</p>"
+  },
+  {
+    "id": "ui-ux-principles",
+    "title": "10 UI/UX Principles for Modern Apps",
+    "category": "Digital Craftsmanship",
+    "author": "Your Name",
+    "date": "July 10, 2024",
+    "readTime": "8 min read",
+    "image": "https://placehold.co/600x400/1F2937/4F46E5?text=Code",
+    "content": "<p>A deep dive into the core principles that make for an intuitive and engaging user experience...</p>"
+  },
+  {
+    "id": "stoicism-developer",
+    "title": "How Reading Stoicism Made Me a Better Developer",
+    "category": "Connected Ideas",
+    "author": "Your Name",
+    "date": "July 5, 2024",
+    "readTime": "12 min read",
+    "image": "https://placehold.co/600x400/1F2937/FFFFFF?text=Ideas",
+    "content": "<p>Practical lessons from ancient philosophy that can be applied to modern software development...</p>"
+  }
+]
