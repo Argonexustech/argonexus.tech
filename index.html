@@ -3,58 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Argonexus - A Technologist's Journey</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="A personal website and blog exploring technology, craftsmanship, and big ideas.">
+  <meta name="keywords" content="technology, blog, projects, web development, software engineering">
+  <title>ArgoNexus - A Technologist's Journey</title>
+  <link rel="stylesheet" href="output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter', 'sans-serif'] },
-          colors: {
-            'brand-primary': '#4F46E5',
-            'brand-secondary': '#7C3AED',
-            'brand-dark': '#111827',
-            'brand-light': '#F9FAFB',
-          }
-        }
-      }
-    }
-  </script>
 </head>
 <body class="bg-brand-dark text-brand-light font-sans antialiased">
 
   <!-- Header -->
   <header class="bg-brand-dark/80 backdrop-blur-sm sticky top-0 z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="index.html" class="text-2xl font-bold text-white">Argo<span class="text-brand-primary">nexus</span></a>
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="argonexus-logo-nowhite.png" alt="ArgoNexus" class="h-14 w-auto">
+        <span class="text-xl font-bold text-white hidden sm:block">ArgoNexus</span>
+      </a>
       <div class="hidden md:flex items-center space-x-8">
         <a href="#themes">Themes</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
         <a href="blog.html">Blog</a>
         <a href="#contact">Contact</a>
       </div>
-      <a href="#contact" class="hidden md:block bg-brand-primary hover:bg-brand-secondary text-white font-semibold py-2 px-4 rounded-lg transition-transform hover:scale-105">Connect</a>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
     </nav>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="#themes" class="block py-2 px-4 text-sm text-white">Themes</a>
+      <a href="projects.html" class="block py-2 px-4 text-sm text-white">Projects</a>
+      <a href="about.html" class="block py-2 px-4 text-sm text-white">About</a>
+      <a href="blog.html" class="block py-2 px-4 text-sm text-white">Blog</a>
+      <a href="#contact" class="block py-2 px-4 text-sm text-white">Contact</a>
+    </div>
   </header>
 
   <!-- Hero Section -->
   <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center overflow-hidden">
     <div class="absolute inset-0 bg-brand-dark opacity-50 z-10"></div>
     <div class="absolute inset-0 z-0">
-      <div class="absolute bottom-0 left-[-20%] right-[-20%] top-[-20%] h-[140%] w-[140%] bg-transparent bg-[radial-gradient(circle_farthest-side,rgba(79,70,229,0.2),rgba(255,255,255,0))]"></div>
+      <div class="absolute bottom-0 left-[-20%] right-[-20%] top-[-20%] h-[140%] w-[140%] bg-transparent bg-[radial-gradient(circle_farthest-side,rgba(37,99,235,0.15),rgba(249,115,22,0.1),rgba(255,255,255,0))]"></div>
     </div>
     <div class="container mx-auto px-6 z-20">
+      <div class="flex justify-center mb-4">
+        <img src="argonexus-logo-nowhite.png" alt="ArgoNexus" class="h-64 sm:h-80 md:h-96 lg:h-112 w-auto drop-shadow-2xl animate-pulse hover:animate-none transition-all duration-300 hover:scale-105">
+      </div>
       <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
         Exploring the Nexus of <span class="text-brand-primary">Technology</span> & <span class="text-brand-secondary">Curiosity</span>
       </h1>
-      <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+      <p class="text-lg md:text-xl text-brand-gray-300 max-w-3xl mx-auto mb-8">
         A personal site dedicated to exploring code, creativity, and the connected ideas that shape our digital world.
       </p>
-      <a href="#themes" class="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-3 px-8 rounded-full text-lg transition-transform hover:scale-105 inline-block">Start Exploring</a>
+      <a href="#themes" class="bg-gradient-to-r from-brand-primary to-brand-secondary hover:from-brand-secondary hover:to-brand-primary text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 inline-block shadow-lg">Start Exploring</a>
     </div>
   </section>
 
@@ -111,7 +117,12 @@
   <!-- Footer -->
   <footer class="bg-brand-dark border-t border-gray-800">
     <div class="container mx-auto px-6 py-8 text-center text-gray-400">
-      <p>&copy; 2024 Argonexus. All Rights Reserved.</p>
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="#" class="hover:text-white transition-colors duration-300">GitHub</a>
+        <a href="#" class="hover:text-white transition-colors duration-300">LinkedIn</a>
+        <a href="#" class="hover:text-white transition-colors duration-300">Twitter</a>
+      </div>
+      <p>&copy; 2024 ArgoNexus. All Rights Reserved.</p>
     </div>
   </footer>
 
@@ -126,7 +137,14 @@
       setTimeout(() => message.textContent = "", 5000);
     });
 
-    // Load latest 3 posts
+    // Mobile menu
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Load latest posts from posts.json
     fetch("posts.json")
       .then(res => res.json())
       .then(posts => {
@@ -140,7 +158,7 @@
             <div class="p-6">
               <span class="text-sm text-brand-secondary font-semibold">${post.category}</span>
               <h3 class="text-xl font-bold my-2 hover:text-brand-primary"><a href="post.html?id=${post.id}">${post.title}</a></h3>
-              <p class="text-gray-400 text-sm mb-4">${post.content.substring(0, 100)}...</p>
+              <p class="text-gray-400 text-sm mb-4">By ${post.author} · ${post.date} · ${post.readTime}</p>
             </div>
           </div>
         `).join("");

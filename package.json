@@ -1,0 +1,25 @@
+{
+  "name": "argonexus.tech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules\\.bin\\tailwindcss -i .\\style.css -o .\\output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Argonexustech/argonexus.tech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Argonexustech/argonexus.tech/issues"
+  },
+  "homepage": "https://github.com/Argonexustech/argonexus.tech#readme",
+  "devDependencies": {
+    "tailwindcss-cli": "^0.1.2"
+  }
+}
