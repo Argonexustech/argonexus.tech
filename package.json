@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Argonexustech/argonexus.tech/issues"
   },
-  "homepage": "https://github.com/Argonexustech/argonexus.tech#readme",
+  "homepage": "https://argonexustech.github.io/argonexus.tech",
   "devDependencies": {
     "tailwindcss-cli": "^0.1.2"
   }
