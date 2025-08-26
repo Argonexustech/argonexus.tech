@@ -6,7 +6,7 @@
     "author": "Matt K",
     "date": "July 15, 2025",
     "readTime": "6 min read",
-    "image": "https://placehold.co/600x400/1F2937/7C3AED?text=Tech",
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     "description": "A look into the future of web development, exploring emerging trends and technologies.",
     "tags": ["web development", "future", "2025", "trends"],
     "file": "posts/future-web-2025.md"
@@ -18,7 +18,7 @@
     "author": "Matt K",
     "date": "July 10, 2025",
     "readTime": "8 min read",
-    "image": "https://placehold.co/600x400/1F2937/4F46E5?text=Code",
+    "image": "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     "description": "Essential UI/UX principles that every developer should know to build better applications.",
     "tags": ["ui", "ux", "design", "principles", "development"],
     "file": "posts/ui-ux-principles.md"
@@ -30,7 +30,7 @@
     "author": "Matt K",
     "date": "July 5, 2025",
     "readTime": "12 min read",
-    "image": "https://placehold.co/600x400/1F2937/FFFFFF?text=Ideas",
+    "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     "description": "Exploring the intersection of ancient philosophy and modern software development.",
     "tags": ["stoicism", "philosophy", "development", "productivity"],
     "file": "posts/stoicism-developer.md"
