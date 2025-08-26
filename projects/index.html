@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A showcase of projects by ArgoNexus.">
+  <meta name="keywords" content="projects, portfolio, web development, software engineering">
+  <title>Projects - ArgoNexus</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-brand-dark text-brand-light font-sans antialiased">
+  <header class="bg-brand-dark/80 backdrop-blur-sm sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/" class="flex items-center space-x-2">
+        <img src="argonexus-logo-nowhite.png" alt="ArgoNexus" class="h-14 w-auto">
+        <span class="text-xl font-bold text-white hidden sm:block">ArgoNexus</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="/#themes">Themes</a>
+        <a href="/projects" class="text-brand-primary">Projects</a>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+        <a href="/#contact">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="/#themes" class="block py-2 px-4 text-sm text-white">Themes</a>
+      <a href="/projects" class="block py-2 px-4 text-sm text-white">Projects</a>
+      <a href="/about" class="block py-2 px-4 text-sm text-white">About</a>
+      <a href="/blog" class="block py-2 px-4 text-sm text-white">Blog</a>
+      <a href="/#contact" class="block py-2 px-4 text-sm text-white">Contact</a>
+    </div>
+  </header>
+
+  <main class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white">My Projects</h1>
+        <p class="text-lg text-gray-400 mt-4">A collection of things I've built.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-brand-dark rounded-xl overflow-hidden shadow-lg group">
+          <a href="#" target="_blank">
+            <img src="https://via.placeholder.com/600x400" alt="Project Image" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+          </a>
+          <div class="p-6">
+            <h3 class="text-xl font-bold my-2 hover:text-brand-primary"><a href="#" target="_blank">Project Title 1</a></h3>
+            <p class="text-gray-400 text-sm mb-4">A more detailed description of the project. What it does, why you built it, and what you learned.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">HTML</span>
+              <span class="bg-gray-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">CSS</span>
+              <span class="bg-gray-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="bg-brand-dark rounded-xl overflow-hidden shadow-lg group">
+          <a href="#" target="_blank">
+            <img src="https://via.placeholder.com/600x400" alt="Project Image" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+          </a>
+          <div class="p-6">
+            <h3 class="text-xl font-bold my-2 hover:text-brand-primary"><a href="#" target="_blank">Project Title 2</a></h3>
+            <p class="text-gray-400 text-sm mb-4">A more detailed description of the project. What it does, why you built it, and what you learned.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">React</span>
+              <span class="bg-gray-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Node.js</span>
+              <span class="bg-gray-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Express</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="bg-brand-dark rounded-xl overflow-hidden shadow-lg group">
+          <a href="#" target="_blank">
+            <img src="https://via.placeholder.com/600x400" alt="Project Image" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+          </a>
+          <div class="p-6">
+            <h3 class="text-xl font-bold my-2 hover:text-brand-primary"><a href="#" target="_blank">Project Title 3</a></h3>
+            <p class="text-gray-400 text-sm mb-4">A more detailed description of the project. What it does, why you built it, and what you learned.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Python</span>
+              <span class="bg-gray-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Flask</span>
+              <span class="bg-gray-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">SQLAlchemy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-brand-dark border-t border-gray-800">
+    <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="#" class="hover:text-white transition-colors duration-300">GitHub</a>
+        <a href="#" class="hover:text-white transition-colors duration-300">LinkedIn</a>
+        <a href="#" class="hover:text-white transition-colors duration-300">Twitter</a>
+      </div>
+      <p>&copy; 2025 ArgoNexus. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

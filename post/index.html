@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>Post - ArgoNexus</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-brand-dark text-brand-light font-sans antialiased">
+  <header class="bg-brand-dark/80 backdrop-blur-sm sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/" class="flex items-center space-x-2">
+        <img src="argonexus-logo-nowhite.png" alt="ArgoNexus" class="h-14 w-auto">
+        <span class="text-xl font-bold text-white hidden sm:block">ArgoNexus</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="/#themes">Themes</a>
+        <a href="/projects">Projects</a>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+        <a href="/#contact">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="/#themes" class="block py-2 px-4 text-sm text-white">Themes</a>
+      <a href="/projects" class="block py-2 px-4 text-sm text-white">Projects</a>
+      <a href="/about" class="block py-2 px-4 text-sm text-white">About</a>
+      <a href="/blog" class="block py-2 px-4 text-sm text-white">Blog</a>
+      <a href="/#contact" class="block py-2 px-4 text-sm text-white">Contact</a>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 max-w-3xl py-12">
+    <article id="post-content"></article>
+    <div class="mt-12 text-center">
+      <a href="blog.html" class="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-3 px-8 rounded-full transition-transform hover:scale-105 inline-block">← Back to Blog</a>
+    </div>
+  </main>
+
+  <footer class="bg-brand-dark border-t border-gray-800">
+    <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="#" class="hover:text-white transition-colors duration-300">GitHub</a>
+        <a href="#" class="hover:text-white transition-colors duration-300">LinkedIn</a>
+        <a href="#" class="hover:text-white transition-colors duration-300">Twitter</a>
+      </div>
+      <p>&copy; 2025 ArgoNexus. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="libs/marked.min.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const postId = params.get("id");
+
+    fetch("posts.json")
+      .then(res => res.json())
+      .then(posts => {
+        const post = posts.find(p => p.id === postId);
+        if (post) {
+          fetch(post.file)
+            .then(res => res.text())
+            .then(md => {
+              document.title = post.title + " - ArgoNexus";
+              document.querySelector('meta[name="description"]').setAttribute("content", post.description);
+              document.querySelector('meta[name="keywords"]').setAttribute("content", post.tags.join(", "));
+              document.getElementById("post-content").innerHTML = `
+                <header class="mb-12 text-center">
+                  <span class="text-sm font-semibold text-brand-secondary">${post.category}</span>
+                  <h1 class="text-4xl md:text-5xl font-extrabold text-white mt-4">${post.title}</h1>
+                  <p class="text-gray-400 mt-4">By <span class="font-semibold">${post.author}</span> · ${post.date} · ${post.readTime}</p>
+                </header>
+                <div class="prose prose-lg prose-invert max-w-none">${marked.parse(md)}</div>
+              `;
+            });
+        } else {
+          document.getElementById("post-content").innerHTML = "<p class='text-gray-400 text-center'>Post not found.</p>";
+        }
+      });
+
+    // Mobile menu
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
