@@ -1,5 +1,17 @@
 [
   {
+    "id": "understanding-ai-revolution",
+    "title": "Understanding the AI Revolution: What Large Language Models Are and Are Not",
+    "category": "Future Tech",
+    "author": "Matt K",
+    "date": "August 20, 2025",
+    "readTime": "5 min read",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+    "description": "Breaking down what Large Language Models actually are—and what they're not—to separate facts from fiction.",
+    "tags": ["AI", "LLM", "artificial intelligence", "technology", "machine learning"],
+    "file": "posts/understanding-ai-revolution.md"
+  },
+  {
     "id": "future-web-2025",
     "title": "The Future of Web Development in 2025",
     "category": "Future Tech",
