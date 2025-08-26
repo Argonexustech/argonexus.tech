@@ -1,6 +1,6 @@
 # The Future of Web Development in 2025
 
-*By ArgoNexus – July 15, 2024 – 6 min read*
+*By Matt K – July 15, 2025 – 6 min read*
 
 As we approach 2025, web development is experiencing its most significant transformation since the advent of responsive design. The convergence of AI, edge computing, and new web standards is reshaping how we build digital experiences. Here's what the next wave of web development looks like.
 

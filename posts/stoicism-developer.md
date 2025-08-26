@@ -1,6 +1,6 @@
 # How Reading Stoicism Made Me a Better Developer
 
-*By ArgoNexus – July 5, 2024 – 12 min read*
+*By Matt K – July 5, 2025 – 12 min read*
 
 Last year, during a particularly frustrating debugging session that had lasted three days, I found myself questioning not just my code, but my entire approach to software development. A colleague mentioned Marcus Aurelius's *Meditations*, and out of curiosity (and desperation), I picked it up. I had no idea that ancient Roman philosophy would fundamentally change how I write code and handle the inevitable chaos of software development.
 

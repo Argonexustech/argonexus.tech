@@ -1,6 +1,6 @@
 # 10 UI/UX Principles for Modern Apps
 
-*By ArgoNexus – July 10, 2024 – 8 min read*
+*By Matt K – July 10, 2025 – 8 min read*
 
 Great user experience isn't about following trends—it's about understanding human psychology and creating interfaces that feel natural, efficient, and delightful. After years of building applications and observing user behavior, these are the principles that consistently lead to successful digital products.
 
