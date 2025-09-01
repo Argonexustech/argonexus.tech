@@ -45,7 +45,7 @@
   <main class="container mx-auto px-6 max-w-3xl py-12">
     <article id="post-content"></article>
     <div class="mt-12 text-center">
-      <a href="blog.html" class="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-3 px-8 rounded-full transition-transform hover:scale-105 inline-block">← Back to Blog</a>
+      <a href="/blog" class="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-3 px-8 rounded-full transition-transform hover:scale-105 inline-block">← Back to Blog</a>
     </div>
   </main>
 
@@ -65,7 +65,7 @@
     const params = new URLSearchParams(window.location.search);
     const postId = params.get("id");
 
-    fetch("posts.json")
+    fetch("../posts.json")
       .then(res => res.json())
       .then(posts => {
         const post = posts.find(p => p.id === postId);
