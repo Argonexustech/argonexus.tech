@@ -5,9 +5,17 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(nslookup:*)"
+      "Bash(nslookup:*)",
+      "Bash(flutter run:*)",
+      "Bash(flutter:*)",
+      "Bash(powershell:*)",
+      "Bash(\"build\\windows\\x64\\runner\\Release\\gw2_app.exe\")"
     ],
     "deny": [],
-    "ask": []
+    "ask": [],
+    "additionalDirectories": [
+      "C:\\Users\\mkyna\\GitHub\\GW2App",
+      "C:\\c\\Users\\mkyna\\GitHub"
+    ]
   }
 }
