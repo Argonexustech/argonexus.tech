@@ -1,4 +1,22 @@
-# How Reading Stoicism Made Me a Better Developer
+---
+id: stoicism-developer
+title: How Reading Stoicism Made Me a Better Developer
+category: Connected Ideas
+author: Matt K
+date: 'July 5, 2025'
+readTime: 12 min read
+image: >-
+  https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80
+description: >-
+  Exploring the intersection of ancient philosophy and modern software
+  development.
+tags:
+  - stoicism
+  - philosophy
+  - development
+  - productivity
+file: posts/stoicism-developer.md
+---
 
 *By Matt K – July 5, 2025 – 12 min read*
 

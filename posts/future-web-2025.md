@@ -1,4 +1,22 @@
-# The Future of Web Development in 2025
+---
+id: future-web-2025
+title: The Future of Web Development in 2025
+category: Future Tech
+author: Matt K
+date: 'July 15, 2025'
+readTime: 6 min read
+image: >-
+  https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80
+description: >-
+  A look into the future of web development, exploring emerging trends and
+  technologies.
+tags:
+  - web development
+  - future
+  - '2025'
+  - trends
+file: posts/future-web-2025.md
+---
 
 *By Matt K – July 15, 2025 – 6 min read*
 

@@ -1,4 +1,23 @@
-# 10 UI/UX Principles for Modern Apps
+---
+id: ui-ux-principles
+title: 10 UI/UX Principles for Modern Apps
+category: Digital Craftsmanship
+author: Matt K
+date: 'July 10, 2025'
+readTime: 8 min read
+image: >-
+  https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80
+description: >-
+  Essential UI/UX principles that every developer should know to build better
+  applications.
+tags:
+  - ui
+  - ux
+  - design
+  - principles
+  - development
+file: posts/ui-ux-principles.md
+---
 
 *By Matt K – July 10, 2025 – 8 min read*
 

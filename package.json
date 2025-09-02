@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node_modules\\.bin\\tailwindcss -i .\\style.css -o .\\output.css"
+    "build": "tailwindcss -i .\\style.css -o .\\output.css"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,10 @@
   },
   "homepage": "https://argonexustech.github.io/argonexus.tech",
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "tailwindcss-cli": "^0.1.2"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3"
   }
 }

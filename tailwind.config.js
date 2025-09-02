@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./*.html"],
+  content: ["./*.html", "./post/*.html"],
   theme: {
     extend: {
       fontFamily: { sans: ['Inter', 'sans-serif'] },
@@ -27,5 +27,5 @@ module.exports = {
       }
     }
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }
